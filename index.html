@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/jquery-fullPage/2.7.4/jquery.fullPage.css"> -->
     
+    <link rel="stylesheet" href="css/combined-c6fc81ca25.css">
 </head>
 
     
@@ -26,28 +27,23 @@
     </div>
 
     <!-- 加载 H5组件 相关资源 -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         
         var res = [
         'Base','Bar','Bar_v','Point','Polyline','Radar','Pie','Ring'
         ];
         var html = [];
         for(s in res ){
-            html.push('<script type="text/javascript" src="../js/H5Component'+res[s]+'.js"> <\/script>');
-            html.push('<link rel="stylesheet" type="text/css" href="../css/H5Component'+res[s]+'.css">');
+            html.push('<script type="text/javascript" src="js/H5Component'+res[s]+'.js"> <\/script>');
+            html.push('<link rel="stylesheet" type="text/css" href="css/H5Component'+res[s]+'.css">');
         }
 
         document.write( html.join('') );
-    </script>
+    </script> -->
 
-    <!-- H5对象： 进行内容管理 -->
-
-    <script type="text/javascript" src="../js/H5.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/H5.css">
-
-    <script type="text/javascript" src="../js/H5_loading.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/H5_loading.css">
-
+    
+    <script src="js/combined-66d62213a0.js"></script>
+    
     <!-- 页面编辑的样式 -->
     <style type="text/css">
         body{
@@ -56,11 +52,11 @@
         }
 
         .h5_page{
-            background-image: url(../img/page_bg.png);
+            background-image: url(img/page_bg.png);
         }
 
         .h5_page_face{
-            background-image: url(../img/face_bg.png)
+            background-image: url(img/face_bg.png)
         }
 
         .h5_component_name_slogan{
@@ -79,7 +75,7 @@
         }
 
         .h5_component_name_caption{
-            background-image: url(../img/page_caption_bg.png);
+            background-image: url(img/page_caption_bg.png);
             width: 283px;
             height: 160px;
             text-align: center;
@@ -109,7 +105,7 @@
 
             h5.whenAddPage = function(){
                 this.addComponent('slide_up',{
-                    bg:'../img/footer.png',
+                    bg:'img/footer.png',
                     css:{
                         opacity:0,
                         width:'100%',height:'20px',
@@ -131,7 +127,7 @@
                     center:true,
                     width: 395,
                     height: 130,
-                    bg: '../img/face_logo.png',
+                    bg: 'img/face_logo.png',
                     css:{opacity:0},
                     animateIn:{top:100,opacity:1},
                     animateOut:{top:0,opacity:0}
@@ -140,7 +136,7 @@
                     center:true,
                     width: 365,
                     height: 99,
-                    bg: '../img/face_slogan.png',
+                    bg: 'img/face_slogan.png',
                     css:{opacity:0,top:180},
                     animateIn:{left:'50%',opacity:1},
                     animateOut:{left:'0%',opacity:0},
@@ -149,7 +145,7 @@
                 .addComponent('face_img_left',{
                     width: 370,
                     height: 493,
-                    bg: '../img/face_img_left.png',
+                    bg: 'img/face_img_left.png',
                     css:{opacity:0,left:-50,bottom:-50},
                     animateIn:{left:0,opacity:1,bottom:0},
                     animateOut:{opacity:0,left:-50,bottom:-50},
@@ -158,7 +154,7 @@
                 .addComponent('face_img_right',{
                     width: 276,
                     height: 449,
-                    bg: '../img/face_img_right.png',
+                    bg: 'img/face_img_right.png',
                     css:{opacity:0,right:-50,bottom:-50},
                     animateIn:{right:0,opacity:1,bottom:0},
                     animateOut:{opacity:0,right:-50,bottom:-50},
@@ -181,7 +177,7 @@
                     width:481,
                     height:295,
                     center:true,
-                    bg:'../img/description_bg.gif',
+                    bg:'img/description_bg.gif',
                     css:{
                         opacity:0,textAlign:'justify',color:'#fff',fontSize:'15px',lineHeight:'18px',padding:'15px 10px 10px 10px',top:240
                     },
@@ -194,7 +190,7 @@
                     width:515,
                     height:305,
                     center:true,
-                    bg:'../img/p1_people.png',
+                    bg:'img/p1_people.png',
                     css:{
                         opacity:0,bottom:0
                     },                   
@@ -492,7 +488,7 @@
                     width:395,
                     height:129,
                     center:true,
-                    bg:'../img/tail_logo.png',
+                    bg:'img/tail_logo.png',
                     css:{
                         opacity:0,top:210
                     },
@@ -503,7 +499,7 @@
                     width:314,
                     height:46,
                     center:true,
-                    bg:'../img/tail_slogan.png',
+                    bg:'img/tail_slogan.png',
                     css:{
                         opacity:0,top:280
                     },
@@ -514,7 +510,7 @@
                 .addComponent('share',{
                     width:128,
                     height:120,
-                    bg:'../img/tail_share.png',
+                    bg:'img/tail_share.png',
                     css:{
                         opacity:0,top:110,right:110
                     },
@@ -526,15 +522,15 @@
                     width:52,
                     height:50,
                     center:true,
-                    bg:'../img/tail_back.png',
+                    bg:'img/tail_back.png',
                     onclick:function(){
                         $.fn.fullpage.moveTo( 1 )
                     }
                 })
 
                             
-            .loader(['../img/face_logo.png','../img/face_slogan.png','../img/face_img_left.png','../img/tail_back.png','../img/tail_slogan.png',
-                '../img/tail_share.png','../img/tail_logo.png','../img/page_caption_bg.png','../img/page_caption_bg.png','../img/p1_people.png','../img/footer.png','../img/face_img_right.png']);
+            .loader(['img/face_logo.png','img/face_slogan.png','img/face_img_left.png','img/tail_back.png','img/tail_slogan.png',
+                'img/tail_share.png','img/tail_logo.png','img/page_caption_bg.png','img/page_caption_bg.png','img/p1_people.png','img/footer.png','img/face_img_right.png']);
                     
         })
     </script>
